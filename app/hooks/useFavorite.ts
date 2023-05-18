@@ -23,8 +23,6 @@ export const useFavorite = ({
         return list.includes(listingId)
     }, [currentUser?.favoriteIds, listingId])
 
-    console.log(hasFavorited)
-
     const toggleFavorite = useCallback(async (
         e: React.MouseEvent<HTMLDivElement>
     ) => {
