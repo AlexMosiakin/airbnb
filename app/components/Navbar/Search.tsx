@@ -37,6 +37,8 @@ export const Search = () => {
 
       return `${diff} Days`
     }
+
+    return 'Any Week'
   }, [endDate, startDate])
 
   const guestLabel = useMemo(() => {

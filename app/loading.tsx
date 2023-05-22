@@ -1,7 +1,9 @@
 import { Loader } from "./components/Loader/Loader"
 
-export const Loading = () => {
+const Loading = () => {
     return (
         <Loader />
     )
 }
+
+export default Loading
