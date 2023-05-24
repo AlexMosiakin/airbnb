@@ -26,6 +26,7 @@ export const PropertiesClient: React.FC<PropertiesClientProps> = ({
         
         axios.delete(`api/listings/${id}`).then(() => {
             toast.success('Property deleted successfully')
+            router.refresh()
         }).catch((e) => {
             toast.error(e?.response?.data?.error)
         }).finally(() => {

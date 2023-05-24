@@ -36,7 +36,7 @@ export const ListingCard: React.FC<ListingCardProps> = ({
     (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
 
-      if (!disabled) {
+      if (disabled) {
         return;
       }
 
