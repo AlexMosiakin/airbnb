@@ -62,7 +62,7 @@ export const Search = () => {
         </div>
         <div className="text-sm pl-6 pr-2 text-gray-600 flex flex-row items-center gap-3">
             <div className="hidden sm:block">{guestLabel}</div>
-            <div className="p-2 bg-rose-500 rounded-full text-white">
+            <div className="p-2 bg-indigo-600 rounded-full text-white">
                 <BiSearch size={18}/>
             </div>
         </div>

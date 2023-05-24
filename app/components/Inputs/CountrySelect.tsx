@@ -51,7 +51,7 @@ export const CountrySelect: React.FC<CountySelectProps> = ({
           colors: {
             ...theme.colors,
             primary: "black",
-            primary25: "#ffe4e6",
+            primary25: "#4f46e5",
           },
         })}
       />
