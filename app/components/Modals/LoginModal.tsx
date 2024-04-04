@@ -97,7 +97,7 @@ export const LoginModal = () => {
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
-          <div>First time using Airbnb?</div>
+          <div>First time using Airhome?</div>
           <div
             onClick={toggleModal}
             className="text-neutral-800 cursor-pointer hover:underline"

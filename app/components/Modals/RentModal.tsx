@@ -253,7 +253,7 @@ export const RentModal = () => {
   return (
     <Modal
       isOpen={rentModal.isOpen}
-      title={"Airbnb your home!"}
+      title={"Airhome your home!"}
       onSubmit={handleSubmit(onSubmit)}
       onClose={rentModal.onClose}
       actionLabel={actionLabel}
