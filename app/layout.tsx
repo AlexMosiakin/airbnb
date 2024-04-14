@@ -9,6 +9,7 @@ import getCurrentUser from "./actions/getCurrentUser";
 import { RentModal } from "./components/Modals/RentModal";
 import { SearchModal } from "./components/Modals/SearchModal";
 import Head from "next/head";
+import { Footer } from "./components/Footer/Footer";
 
 export const metadata = {
   title: "Airhome",
@@ -48,16 +49,21 @@ export default async function RootLayout({
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <body className={font.className}>
-        <ClientOnly>
-          <ToasterProvider />
-          <RegisterModal />
-          <RentModal />
-          <LoginModal />
-          <SearchModal />
-          <Navbar currentUser={currentUser} />
-        </ClientOnly>
-        <div className="pb-20 pt-28">
-          {children}
+        <div className="flex flex-col h-full">
+          <ClientOnly>
+            <ToasterProvider />
+            <RegisterModal />
+            <RentModal />
+            <LoginModal />
+            <SearchModal />
+            <Navbar currentUser={currentUser} />
+          </ClientOnly>
+          <div className="pb-20 pt-28">
+            {children}
+          </div>
+          <ClientOnly>
+            <Footer />
+          </ClientOnly>
         </div>
       </body>
     </html>
